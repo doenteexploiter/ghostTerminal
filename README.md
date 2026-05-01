@@ -5,7 +5,7 @@
 -- Coloque em: StarterPlayer > StarterPlayerScripts
 -- ============================================================
 
-local HackerConsole = require(game.ReplicatedStorage.HackerConsoleUI)
+local HackerConsole = loadstring(game:HttpGet("https://raw.githubusercontent.com/doenteexploiter/ghostTerminal/refs/heads/main/ConsoleUI.lua"))()
 local console = HackerConsole.new()
 -- ══════════════════════════════════════════════
 --  CRIA O CONSOLE
