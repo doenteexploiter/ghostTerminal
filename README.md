@@ -1,10 +1,6 @@
 # Exemplo 🙊
 
 ```lua
--- LocalScript de Exemplo
--- Coloque em: StarterPlayer > StarterPlayerScripts
--- ============================================================
-
 local HackerConsole = loadstring(game:HttpGet("https://raw.githubusercontent.com/doenteexploiter/ghostTerminal/refs/heads/main/ConsoleUI.lua"))()
 local console = HackerConsole.new()
 -- ══════════════════════════════════════════════
