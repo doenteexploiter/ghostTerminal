@@ -1,10 +1,12 @@
+# Exemplo 🙊
+
+```lua
 -- LocalScript de Exemplo
 -- Coloque em: StarterPlayer > StarterPlayerScripts
 -- ============================================================
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local HackerConsole     = require(ReplicatedStorage:WaitForChild("HackerConsoleUI"))
-
+local HackerConsole = require(game.ReplicatedStorage.HackerConsoleUI)
+local console = HackerConsole.new()
 -- ══════════════════════════════════════════════
 --  CRIA O CONSOLE
 -- ══════════════════════════════════════════════
@@ -133,3 +135,4 @@ console:addCommand("!theme", "Muda o tema. Ex: !theme verde | azul | rosa | lara
 		console:printWarn("Temas: verde | azul | rosa | laranja | roxo | branco | vermelho")
 	end
 end)
+```
