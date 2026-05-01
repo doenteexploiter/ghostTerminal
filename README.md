@@ -39,7 +39,7 @@ console:setHeaderBanner(false)
 -- colocar imagem
 console:setSideImage(123456789)
 ```
-#Add cmd 🐺
+# Add cmd 🐺
 ```lua
 console:addCommand("!ping", "Test command", function(args)
     console:print("Pong!")
