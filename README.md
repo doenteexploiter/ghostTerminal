@@ -1,3 +1,50 @@
+# Cria interface 👻
+```lua
+local HackerConsole = loadstring(game:HttpGet("https://raw.githubusercontent.com/doenteexploiter/ghostTerminal/refs/heads/main/ConsoleUI.lua"))()
+local console = HackerConsole.new()
+```
+# Enfeita interface 👽
+```lua
+local console = HackerConsole.new({
+    ConsoleName = "root@system:~#",
+    TriggerWord = ".console",
+    WelcomeMessage = "System initialized.",
+    MaxLines = 80,
+    TextSpeed = 0.012
+})
+
+
+-- ativa escuta do chat (.console abre/fecha)
+console:listenChat()
+
+-- Use console:setAscii("") para desativar.
+console:setAscii([[
+ ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗
+██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝
+██║  ███╗███████║██║   ██║███████╗   ██║   
+██║   ██║██╔══██║██║   ██║╚════██║   ██║   
+╚██████╔╝██║  ██║╚██████╔╝███████║   ██║   
+ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═]])
+
+-- [ 2 ] Mudar a cor accent (toda a interface muda)
+-- Verde padrão:   console:setAccentColor(Color3.fromRGB(0, 255, 128))
+-- Azul cyber:     console:setAccentColor(Color3.fromRGB(0, 180, 255))
+-- Rosa neon:      console:setAccentColor(Color3.fromRGB(255, 50, 180))
+-- Laranja:        console:setAccentColor(Color3.fromRGB(255, 140, 0))
+-- Roxo:           console:setAccentColor(Color3.fromRGB(180, 80, 255))
+console:setAccentColor(Color3.fromRGB(255, 0, 4))
+
+-- tirar banner og
+console:setHeaderBanner(false)
+-- colocar imagem
+console:setSideImage(123456789)
+```
+#Add cmd 🐺
+```lua
+console:addCommand("!ping", "Test command", function(args)
+    console:print("Pong!")
+end)
+```
 # Exemplo 🙊
 
 ```lua
